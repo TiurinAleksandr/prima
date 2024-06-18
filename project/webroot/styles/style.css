@@ -1,0 +1,88 @@
+/* общие стили */
+:root {
+    --sidebar-width: 20%;
+    --main-bg: #F4F4F4;
+}
+* { font-family: "Fira Sans", sans-serif; !important; }
+a { text-decoration: none; }
+
+
+/* bootstrap переопределение */
+.shadow {
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) !important;
+}
+button.shadow:hover {
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25) !important;
+}
+
+
+
+.wrapper {
+    background-color: var(--main-bg);
+    min-height: 100vh;
+}
+.title {
+    font-size: 45px;
+    color: #00000020;
+}
+
+/* стили header */
+.header {
+    height: 130px;
+}
+
+/* стили content */
+.menu li {
+    cursor: pointer;
+    transition: all ease 0.2s;
+    padding: 5px 0;
+}
+.menu li:hover, .menu li i:hover, .menu li.active {
+    font-weight: 600;
+}
+
+/* система */
+.cursor-pointer {
+	cursor: pointer;
+}
+.bg-transparent {background-color: #ffffff00;}
+
+
+
+/* контекстное меню */
+.context-menu ul li {
+	background-color: white;
+	transition: all ease 0.3s;
+}
+.context-menu ul li:hover {
+	background-color: var(--main-bg);
+}
+
+/* popup группы */
+.popup-dark-screen {
+	display: flex;
+	background-color: #21212175;
+	transition: all ease 0.5s;
+}
+.form-field {
+	width: 100%;
+	margin: 0 0 15px;
+	padding: 3px 5px;
+}
+
+
+
+/* главный экран с формой */
+.window {
+	width: 50%;
+}
+@media(max-width: 992px) {
+	.window {
+		width: 75%;
+	}
+}
+@media(max-width: 768px) {
+	.window {
+		width: 100%;
+	}
+}

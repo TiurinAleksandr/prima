@@ -1,5 +1,9 @@
+php_value max_execution_time 5000
+
 RewriteEngine On
 RewriteBase /
 
 RewriteCond %{REQUEST_URI} !^/project/webroot/
 RewriteRule .+ index.php
+
+
